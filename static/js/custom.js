@@ -217,9 +217,9 @@
             speed: 200,
             loop:true,
             strings: [
-              'Computer Science Student',
-              'Mobile Developer',
-            'AR Developer'
+              'Computer Engineer',
+              'in development...',
+            'Stay Tuned'
             ],
             breakLines: false
         }); 

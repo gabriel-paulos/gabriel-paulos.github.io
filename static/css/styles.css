@@ -1222,15 +1222,25 @@ div#particles-box {
  }
 
  .aboutus-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
+  display: flex;
   flex-wrap: wrap;
 }
 .aboutus-row > [class*='col-'] {
   display: flex;
   flex-direction: column;
+}
+
+.flex-container {
+
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+
+  color:white;
+
 }
 
 @media(max-width: 991px){

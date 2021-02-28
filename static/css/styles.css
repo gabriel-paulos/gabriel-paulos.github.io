@@ -1221,6 +1221,18 @@ div#particles-box {
   letter-spacing: 1px;
  }
 
+ .aboutus-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.aboutus-row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
 @media(max-width: 991px){
   .aboutus-text {
     padding-left: 0px;

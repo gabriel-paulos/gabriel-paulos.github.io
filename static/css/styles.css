@@ -1233,6 +1233,7 @@ div#particles-box {
 .flex-container {
 
   display:flex;
+  flex-direction: row;
   flex-flow: row wrap;
   justify-content: space-around;
 }

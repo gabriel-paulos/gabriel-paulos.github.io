@@ -1227,10 +1227,15 @@ div#particles-box {
   width: 100%;
  }
 
+ .card-deck {
+
+  padding: 20%;
+
+ }
  .card{
 
   border-width: 0;
-
+  padding: 10%;
  }
 
 @media(max-width: 991px){

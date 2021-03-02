@@ -255,6 +255,7 @@ img {
   outline: none;
   display: inline-block;
   text-decoration: none !important;
+  background-color: cornsilk;
 }
 .m-btn-white {
   color: #151515;

@@ -1221,28 +1221,12 @@ div#particles-box {
   letter-spacing: 1px;
  }
 
- .aboutus-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.aboutus-row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
+.col-md-6 img{
 
-.flex-container {
-
-  display:flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.flex-item {
-
-  color:black;
+  opacity: 0.8;
 
 }
+
 
 @media(max-width: 991px){
   .aboutus-text {

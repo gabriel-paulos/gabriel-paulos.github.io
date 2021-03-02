@@ -1221,6 +1221,11 @@ div#particles-box {
   letter-spacing: 1px;
  }
 
+ .jumbotron{
+
+  height: 100%;
+  width: 100%;
+ }
 
 @media(max-width: 991px){
   .aboutus-text {

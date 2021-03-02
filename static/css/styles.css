@@ -1227,6 +1227,12 @@ div#particles-box {
   width: 100%;
  }
 
+ .card{
+
+  border-width: 0;
+
+ }
+
 @media(max-width: 991px){
   .aboutus-text {
     padding-left: 0px;

@@ -255,7 +255,7 @@ img {
   outline: none;
   display: inline-block;
   text-decoration: none !important;
-  background-color: cornsilk;
+  background-color: #ededed;
 }
 .m-btn-white {
   color: #151515;
@@ -797,7 +797,7 @@ img {
   display: inline-block;
   font-size: 12px;
   vertical-align: top;
-  color: #ececec;
+  color: #ededed;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.215em;

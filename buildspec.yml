@@ -1,0 +1,26 @@
+version: 0.2
+phases:
+    install:
+        commands:
+            - echo "Install sources"
+            - pip install Pygments
+            - gcc --version
+            - wget https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb 
+            - dpkg -i hugo_extended_0.55.6_Linux-64bit.deb
+            - apt-get install hugo
+    build:
+        commands:
+            - git clone https://github.com/sourcethemes/academic-kickstart.git themes/academic/
+            - cd themes/academic
+            - git submodule update --init --recursive
+            - cd ../../
+            - hugo env
+            - hugo -v --themesDir "themes/academic/themes"
+            - hugo
+            - echo "S3 Upload Beginning"
+            - aws s3 sync public/ s3://www.ivanhigueram.com --region us-east-1 --acl public-read
+            - echo "S3 Upload Complete"
+
+    post_build:
+        commands:
+            - echo "Build complete"

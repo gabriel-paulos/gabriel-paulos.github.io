@@ -1,0 +1,55 @@
+title = "Iván Higuera-Mendieta"
+baseURL = "https://www.ivanhigueram.com/"
+theme = "researcher"
+disableKinds = ["taxonomy", "term"]
+enableEmoji = true
+math = true    # enable KaTeX (https://katex.org/) globally
+googleAnalytics = "UA-126237850-1"  # add your tracking id
+
+[params]
+  author = "Ivan Higuera-Mendieta"
+  profilePicture = "/avatar.jpg"
+  description = "My place in the interwebs"
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  [params.footer]
+    text = "2020"
+    url = "https://en.wikipedia.org/wiki/2020"
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/ivanhigueram/"
+
+[[params.socialIcons]]
+icon = "fab fa-gitlab"
+title = "GitLab"
+url = "https://www.gitlab.com/ivanhigueram"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "twitter"
+url = "https://www.twitter.com/ivanhigueram"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "CV"
+    url = "/resume.pdf"
+    # 'pre' and 'post' hooks are available
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files

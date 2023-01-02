@@ -2,6 +2,26 @@
 title = "Contact"
 +++
 
-* Pronouns: he/him
-* :love_letter: at  ihigueme `at` stanford.edu
+Email me :love_letter: at  ihigueme `at` stanford.edu
 
+---
+<center>
+For the security-minded folks :detective:
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEY1xvHxYJKwYBBAHaRw8BAQdAgkVJiy0H/eL18f+W0V228OHpW1S+HT0xCF4U
+UWfMsvC0PEl2YW4gSGlndWVyYS1NZW5kaWV0YSAobWFpbF9rZXkpIDxiZW5ueXRo
+ZWJhbGxAZmFzdG1haWwuY29tPoiZBBMWCgBBFiEEcOJ/TM5FJm7YdQWXMaS7RBnY
+vkYFAmNcbx8CGwMFCRUYAAAFCwkIBwICIgIGFQoJCAsCBBYCAwECHgcCF4AACgkQ
+MaS7RBnYvkbEjQEAmq01r5TXcXjNyUc9AntxaR9vKIDfOBkKCIFq5ilESg4A/3F5
+TEuEnym9VUOU7JUlZnkzOE8BBS1x4zbhCYcF3AYOuDgEY1xvHxIKKwYBBAGXVQEF
+AQEHQCJoT/Xk3w2NR7fm4cmFIbvRroQf+9SsIA2KkGONwjkQAwEIB4h+BBgWCgAm
+FiEEcOJ/TM5FJm7YdQWXMaS7RBnYvkYFAmNcbx8CGwwFCRUYAAAACgkQMaS7RBnY
+vkbvywEAmGM30GVscJxpiOf3rPyjPwI5U7a8IaD17la/Q/kz96MBALzL0jqBjvXj
+LT5oLWjW3l6FnSSmzQPzdF5cVJi5X+QK
+=KJj3
+-----END PGP PUBLIC KEY BLOCK-----
+```
+</center>

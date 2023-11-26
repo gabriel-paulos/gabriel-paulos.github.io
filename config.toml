@@ -12,7 +12,7 @@ math = true    # enable KaTeX (https://katex.org/) globally
   description = "My place in the interwebs"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   [params.footer]
-    text = "Made with ❤️  and without tracking cookies"
+    text = "Made with 🧡  and without tracking cookies"
     url = "https://www.eff.org/issues/do-not-track"
 
 ## Social links
@@ -23,10 +23,10 @@ icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/ivanhigueram/"
 
-[[params.socialIcons]]
-icon = "fab fa-gitlab"
-title = "GitLab"
-url = "https://www.gitlab.com/ivanhigueram"
+#[[params.socialIcons]]
+#icon = "fab fa-gitlab"
+#title = "GitLab"
+#url = "https://www.gitlab.com/ivanhigueram"
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
@@ -50,10 +50,14 @@ url = "https://sigmoid.social/@ivanhigueram"
     name = "cv"
     url = "/resume.pdf"
     # 'pre' and 'post' hooks are available
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "contact"
     url = "/contact"
+    weight = 3
+  [[menu.main]]
+    name = "blog"
+    url = "https://topcat.prose.sh/"
     weight = 2
 
 [markup.goldmark.renderer]

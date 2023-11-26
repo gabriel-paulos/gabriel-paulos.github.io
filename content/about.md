@@ -6,50 +6,71 @@ title = "About"
 
 {{< headshot src="/avatar3.png" name="" add="" >}}
 
-I am a PhD student in the Earth Systems Science department at the [Stanford
-Doerr School of Sustainability][5] studying our changing environment. I am part
-of the [EchoLab][6] advised by [Marshall Burke][7]. In the past, I was a
-pre-doctoral fellow at the Energy Policy Institute (EPIC) at the University of
-Chicago, working at the [Climate Impact Lab][3]. In a previous life, I was a
-Data Scientist at [DSaPP][4] (now at CMU), and a career bureaucrat at the
-Central Bank of Colombia. 
+I am a third-year PhD student in the Earth Systems Science department at the
+[Stanford Doerr School of Sustainability][5]. I am part of the [EchoLab][6]
+advised by [Marshall Burke][7] and supported by a [Stanford Data Science
+Fellowship][9]. In the past, I was a pre-doctoral fellow at the Energy Policy
+Institute (EPIC) at the University of Chicago, working at the [Climate Impact
+Lab][3]. In a previous life, I was a Data Scientist at [DSaPP][4] (now at CMU),
+and a career bureaucrat at the Central Bank of Colombia. 
 
 ## research interests
 
 I evaluate the effects of environmental changes on humans. I also develop
 machine learning to create cool datasets that help us track humans and nature
-in data-scarce scenarios. I am also curious about the atmospheric circulation
-and weather/climate modeling, particularly how to downscale climate products
-using physics-informed interpolations.
+in data-scarce scenarios. I am interested in downscaling climate data products,
+multi-modal classification, measurement error in causal inference models, and
+wildfires in the Western US.
 
-## publications
+## news and updates
 
-1. Bonilla-Mejia, L., & **Higuera-Mendieta, I.** (2019). Protected Areas under
-    Weak Institutions: Evidence from Colombia. *World Development*, 122.
-    [doi:10.1016/j.worlddev.2019.06.019](https://www.sciencedirect.com/science/article/pii/S0305750X19301718).
-    - Ranked second-best paper by the International Sustainable Development
-      Research Society.
-    - Press coverage: [El Tiempo][1]
+  - **[11/23]** Me and my ~~weak~~ accepted paper on wildfire house' burning risk
+    will be in the CompSust Workshop at NeurIPS 2023 in New Orleans. 
+  - **[09/23]** I received the Stanford Data Science Fellowship (2 years) and now
+    I am part of the SDS PhD Scholars 💻🤖.
+  - **[08/23]** I am presenting our work on wildfire house' burning risk using
+    multimodal classification and recent developments in contrastive learning
+    in [TWEEDS][8] in Portland.
 
-2. Rodolfa, K. T., Salomon, E., Haynes, L., **Higuera-Mendieta, I**, Larson, J.,
-   & Ghani, R. (2020). Case study: Predictive fairness to reduce misdemeanor
-   recidivism through social service interventions. In Proceedings of the 2020
-   conference on fairness, accountability, and transparency (142–153). FAT\* '20
-   . [https://arxiv.org/abs/2001.09233](https://arxiv.org/abs/2001.09233).
+## <u class="publications">publications</u>, <u class="working">working papers</u> & <u class="conferences">workshops</u>
  
-3. Farah, A., **Higuera-Mendieta, I**, Song, Y., Franke, J. A., Moyer, E.,
+<p>&nbsp;</p>
+
+<mark class="confm">1</mark>. **Higuera-Mendieta, I**, Wen, J., & Burke, M. (2023). A table is worth a
+   thousand pictures: Multi-modal contrastive learning in house burning
+   classification in wildfire events. *NeurIPS 2023 Computational
+   Sustainability: Promises and Pitfalls from Theory to Deployment*.
+   
+   <button class="button" onclick="location.href='https://openreview.net/forum?id=7KTQsrUIOy'" id="paper-button">OpenReview</button>
+   
+<mark class="workm">2</mark>. Farah, A., **Higuera-Mendieta, I**, Song, Y., Franke, J. A., Moyer, E.,
    & Nakamura, N. (2020). Arctic airmass displacement and reduced midlatitudes
-   wintertime temperature variability under climate change. *[In preparation for
-   Geophysical Research Letters]*. 
-   - Presented at the American Geophysical Union Meeting AGU  2020. 
+   wintertime temperature variability under climate change. [In preparation for
+   *Geophysical Research Letters*]. 
+   - Presented at the American Geophysical Union Meeting AGU  2020.
+
+<mark class="pubm">3</mark>. Rodolfa, K. T., Salomon, E., Haynes, L., **Higuera-Mendieta, I**, Larson, J.,& Ghani, R. (2020). Case study: Predictive fairness to reduce misdemeanor
+   recidivism through social service interventions. In *Proceedings of the 2020
+   conference on fairness, accountability, and transparency* (142–153). FAT\* '20
+   
+   <button class="button" onclick="location.href='https://arxiv.org/abs/2001.09233'" id="paper-button">Paper</button>
+   <button class="button" onclick="location.href='https://github.com/dssg/aequitas'" id="code-button">Code</button>
+
+<mark class="pubm">4</mark>. Bonilla-Mejia, L., & **Higuera-Mendieta, I.** (2019). Protected Areas under Weak Institutions: Evidence from Colombia. *World Development*, 122 
+   
+   <button class="button" onclick="location.href='https://www.sciencedirect.com/science/article/pii/S0305750X19301718'" id="paper-button">Paper</button>
+   <button class="button" onclick="location.href='https://github.com/banco-republica-research/deforestacion'" id="code-button">Code</button>
+ 
+   - Ranked second-best paper by the International Sustainable Development
+      Research Society.
+   - Press coverage (in Spanish): [El Tiempo][1]
 
 
-[1]:
-https://www.eltiempo.com/vida/medio-ambiente/deforestacion-en-colombia-territorios-colectivos-para-frenarla-379204
-[2]:
-https://s3.amazonaws.com/bncore/wp-content/uploads/2019/01/DAY7_MIN_filled.gif
+[1]: https://www.eltiempo.com/vida/medio-ambiente/deforestacion-en-colombia-territorios-colectivos-para-frenarla-379204
 [3]: http://www.impactlab.org/ 
 [4]: http://www.datasciencepublicpolicy.org/
 [5]: https://sustainability.stanford.edu/
 [6]: https://www.stanfordecholab.com/
 [7]: https://web.stanford.edu/~mburke/
+[8]: https://tweeds.io/
+[9]: https://datascience.stanford.edu/programs/stanford-data-science-scholars-program

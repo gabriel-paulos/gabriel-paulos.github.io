@@ -33,6 +33,7 @@ $y-medium: 1.0rem;
     text-align: left;
 }
 
+
 // Style
 * {
     color: $black;
@@ -55,16 +56,89 @@ $y-medium: 1.0rem;
     }
     p {
         margin-bottom: $y-small;
+	text-align: justify;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
         font-weight: bold;
+	text-align: justify;
         margin: $y-medium 0 $y-small 0;
     }
     @for $i from 1 through 4 {
         h#{$i} {
             font-size: 1.2rem + 0.2 * (4 - $i);
         }
+    }
+    .pubm {
+	background: $publications;
+    }
+    .workm {
+	background: $working;
+    }
+    .confm {
+	background: $conferences;
+    }
+    .publications {
+	text-decoration-thickness: 6px;
+	text-decoration-color: $publications;
+    }
+    .working {
+	text-decoration-thickness: 6px;
+	text-decoration-color: $working;
+	text-decoration-skip-ink: none;
+    }
+    .conferences {
+	text-decoration-thickness: 6px;
+	text-decoration-color: $conferences;
+	text-decoration-skip-ink: none;
+    }
+    #paper-button {
+          border-color: #0099ab;
+          color: #0099ab;
+    }
+    #code-button {
+          border-color: #67c8a3;
+          color: #67c8a3;
+    }
+    #project-button {
+           border-color: #ff8299;
+           color: #ff8299;
+    }
+    .button {
+	/*font-family: 'Cabin', sans-serif;*/
+  	border-radius: 20px;
+  	border-style: solid;
+  	border-width: 2px;
+  	background-color: white;
+  	text-align: center;
+  	transition: all 0.2s;
+  	cursor: pointer;
+  	padding-top:5px;
+  	padding-bottom:5px;
+  	padding-left:10px;
+  	padding-right:10px;
+  	font-size: 15px;
+    }
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.2s;
+    }
+    .button:hover span {
+      padding-right: 25px;
+    }
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
     }
     figure.item {
         vertical-align: top;

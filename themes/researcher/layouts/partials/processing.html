@@ -1,0 +1,61 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+<script>
+  let x;
+  let y;
+  let r;
+  let g;
+  let b;
+  let pg;
+
+  function setup() {
+    pixelDensity(1);
+    const cnv = createCanvas(windowWidth, windowHeight);
+    cnv.id('sketch');
+
+    const displayRatio = windowWidth / windowHeight;
+    pg = createGraphics(100 * displayRatio, 100);
+    x = pg.width / 2;
+    y = pg.height / 2;
+    r = random(0, 255);
+    g = random(0, 255);
+    b = random(0, 255);
+
+    pg.noSmooth();
+    noSmooth();
+  }
+
+  function draw() {
+    let nextX = x + random(-5, 5);
+    let nextY = y + random(-5, 5);
+    nextX = constrain(nextX, 0, pg.width);
+    nextY = constrain(nextY, 0, pg.height);
+
+    r += random(-10, 10);
+    g += random(-10, 10);
+    b += random(-10, 10);
+    r = constrain(r, 0, 255);
+    g = constrain(g, 0, 255);
+    b = constrain(b, 0, 255);
+
+    pg.stroke(r, g, b);
+    pg.line(nextX, nextY, x, y);
+
+    image(pg, 0, 0, width, height);
+
+    x = nextX;
+    y = nextY;
+  }
+
+  function mousePressed() {
+    x = pg.width * (mouseX / width);
+    y = pg.height * (mouseY / height);
+    r = random(0, 255);
+    g = random(0, 255);
+    b = random(0, 255);
+  }
+
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+</script>
+

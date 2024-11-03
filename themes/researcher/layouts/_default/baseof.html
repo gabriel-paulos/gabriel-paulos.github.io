@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
+    {{- partial "processing.html" . -}}	
     {{ if or (.Params.math) (.Site.Params.math) }}
         {{- partial "math.html" . -}}
     {{ end }}

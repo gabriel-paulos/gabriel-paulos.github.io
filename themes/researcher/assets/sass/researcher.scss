@@ -35,6 +35,9 @@ $y-medium: 1.0rem;
 
 
 // Style
+body {
+    background-color: $background;
+}
 * {
     color: $black;
     font-family: "Inconsolata";
@@ -70,13 +73,37 @@ $y-medium: 1.0rem;
         }
     }
     .pubm {
-	background: $publications;
+	color: $publications;
+        background-color: $background;
+        em {
+          color: $publications;
+        };
+        strong {
+          color: $publications;
+        };
+
     }
     .workm {
-	background: $working;
+	color: $working;
+        background-color: $background;
+        em {
+          color: $working;
+        };
+        strong {
+          color: $working;
+        };
+
     }
     .confm {
-	background: $conferences;
+	color: $conferences;
+        background-color: $background;
+        em {
+          color: $conferences;
+        };
+        strong {
+          color: $conferences;
+        };
+
     }
     .publications {
 	text-decoration-thickness: 6px;
@@ -93,19 +120,20 @@ $y-medium: 1.0rem;
 	text-decoration-skip-ink: none;
     }
     #paper-button {
-          border-color: #0099ab;
-          color: #0099ab;
+          border-color: $paper;
+          color: $paper;
+          background-color: $background;
     }
     #code-button {
-          border-color: #67c8a3;
-          color: #67c8a3;
+          border-color: $code;
+          color: $code;
+          background-color: $background;
     }
     #project-button {
            border-color: #ff8299;
            color: #ff8299;
     }
     .button {
-	/*font-family: 'Cabin', sans-serif;*/
   	border-radius: 20px;
   	border-style: solid;
   	border-width: 2px;
@@ -150,9 +178,27 @@ $y-medium: 1.0rem;
     img {
         border-radius: 70%;
         float: right;
+	object-fit: cover;
         margin: -8px 0 0 16px;
         height: $avatar-size;
         width: $avatar-size - 10;
+    }
+    @media (max-width: 600 px) {
+        figure.item {
+            vertical-align: top;
+            display: block;
+            margin: $y-medium auto;
+            text-align: center;
+            float: center;
+        }
+        img {
+            border-radius: 70%;
+            float: center;
+            object-fit: cover;
+            margin: -8px 0 0 16px;
+            height: $avatar-size;
+            width: $avatar-size - 10;
+        }
     }
     .social-links {
         list-style: none;
@@ -209,7 +255,7 @@ $y-medium: 1.0rem;
     }
     code {
         color: $black;
-        background-color: #f8f8f8;
+        background-color: $background;
         border: 1px solid #cccccc;
         border-radius: 10%;
         padding: 0px 4px;

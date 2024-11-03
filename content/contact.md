@@ -9,5 +9,3 @@ title = "Contact"
 💌  hello `at` ivanhigueram.com
 
 </center>
-
-

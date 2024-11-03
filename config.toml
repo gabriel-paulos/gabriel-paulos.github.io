@@ -1,10 +1,9 @@
 title = "iván higuera-mendieta"
-baseURL = "https://www.ivanhigueram.com/"
+baseURL = "https://www.ivanhigueram.com"
 theme = "researcher"
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = true    # enable KaTeX (https://katex.org/) globally
-#googleAnalytics = "UA-126237850-1"  # add your tracking id
 
 [params]
   author = "Ivan Higuera-Mendieta"
@@ -22,11 +21,6 @@ math = true    # enable KaTeX (https://katex.org/) globally
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/ivanhigueram/"
-
-#[[params.socialIcons]]
-#icon = "fab fa-gitlab"
-#title = "GitLab"
-#url = "https://www.gitlab.com/ivanhigueram"
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
@@ -47,18 +41,13 @@ url = "https://sigmoid.social/@ivanhigueram"
     url = "/about"
     weight = 1
   [[menu.main]]
-    name = "cv"
-    url = "/resume.pdf"
-    # 'pre' and 'post' hooks are available
-    weight = 4
-  [[menu.main]]
     name = "contact"
     url = "/contact"
-    weight = 3
+    weight = 2
   [[menu.main]]
     name = "blog"
     url = "https://topcat.prose.sh/"
-    weight = 2
+    weight = 3
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files

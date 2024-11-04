@@ -11,9 +11,10 @@ math = true    # enable KaTeX (https://katex.org/) globally
   description = "My place in the interwebs"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   [params.footer]
-    text = "Made with 🧡  and without tracking cookies"
+    text = "Made with 🧡  and without tracking cooies"
     url = "https://www.eff.org/issues/do-not-track"
-
+    photocreds = "Photo credits to Daisy Lu" 
+    urlphoto = "https://daisylu.github.io/"
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
 

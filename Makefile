@@ -3,7 +3,7 @@ DATESTRING := $(shell date +"%Y-%m-%d_%H-%M-%S")
 
 .PHONY: all public deploy update
 
-all: public deploy invalidate update
+all: public deploy invalidate.json update
 
 
 public:

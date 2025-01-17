@@ -37,7 +37,7 @@ large data on the throughput and latency of resource constrained distributed net
 
 ## Ongoing Projects (independent)
 
-**MCTS DPO for VLMs:**
+### **MCTS DPO for VLMs:**
 
 VLMs are trained by using image-text pairs to map the image embedding space
 and the text embedding space into a joint embedding space. However there exists two problems with
@@ -46,7 +46,7 @@ this approach: the first being that images are significantly denser modalities t
 Similar to O1 there is a requirement for building reasoning trees or graphs such that we could reach a final conclusion
 by exploring the space of possible explanations. However the added modality of vision makes this task more complex. In order to improve how we can reach a state of improving the "intuition" of these systems we will need a policy that is able to reward the system step-wise rather than conclusion-wise. This can be done using DPO.
 
-**Generating better captions by treating visual and text tokens as a form of machine translation:**
+### **Generating better captions by treating visual and text tokens as a form of machine translation:**
 
 In order to improve datasets we need to be able to create systems that are able to reason about images
 over various abstraction levels. In order to do this we need to improve the development of our datasets. 

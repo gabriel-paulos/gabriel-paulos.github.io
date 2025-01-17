@@ -36,7 +36,7 @@ $y-medium: 1.0rem;
 
 // Style
 body {
-    background-color: $background;
+    background-color: $background-color;
 }
 * {
     color: $black;
@@ -74,7 +74,7 @@ body {
     }
     .pubm {
 	color: $publications;
-        background-color: $background;
+        background-color: $background-color;
         em {
           color: $publications;
         };
@@ -85,7 +85,7 @@ body {
     }
     .workm {
 	color: $working;
-        background-color: $background;
+        background-color: $background-color;
         em {
           color: $working;
         };
@@ -96,7 +96,7 @@ body {
     }
     .confm {
 	color: $conferences;
-        background-color: $background;
+        background-color: $background-color;
         em {
           color: $conferences;
         };
@@ -122,12 +122,12 @@ body {
     #paper-button {
           border-color: $paper;
           color: $paper;
-          background-color: $background;
+          background-color: $background-color;
     }
     #code-button {
           border-color: $code;
           color: $code;
-          background-color: $background;
+          background-color: $background-color;
     }
     #project-button {
            border-color: #ff8299;
@@ -255,7 +255,7 @@ body {
     }
     code {
         color: $black;
-        background-color: $background;
+        background-color: $background-color;
         border: 1px solid #cccccc;
         border-radius: 10%;
         padding: 0px 4px;

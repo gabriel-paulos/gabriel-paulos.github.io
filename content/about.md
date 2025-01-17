@@ -37,7 +37,7 @@ large data on the throughput and latency of resource constrained distributed net
 
 ## Ongoing Projects (independent)
 
-#MCTS DPO for VLMs: 
+# MCTS DPO for VLMs: 
 
 VLMs are trained by using image-text pairs to map the image embedding space
 and the text embedding space into a joint embedding space. However there exists two problems with

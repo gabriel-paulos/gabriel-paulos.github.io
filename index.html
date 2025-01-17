@@ -75,12 +75,25 @@
             </a>
         </li>
 
-           <li>
+	  <li>
+		<a href="https://ca.linkedin.com/in/gabriel-paulos" rel="me" aria-label= "Linkedin">
+		  <i class="fa-brands fa-linkedin"></i>
+		</a>
+	  </li>
+
+	<li>
+		<a href="http://gabrielpaulos.com/public/resume.pdf" rel="me" aria-label="resume">
+			<i class="fa-solid fa-bug-slash"></i>
+		</a>
+	</li>
+        <!--
+
+	             <li>
               <a href="https://www.gitlab.com/ivanhigueram" rel="me" aria-label="GitLab">
                 <i class="fab fa-gitlab fa-2x" aria-hidden="true"></i>
             </a>
         </li>
-        
+	    
            <li>
               <a href="https://www.twitter.com/ivanhigueram" rel="me" aria-label="Twitter">
                 <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
@@ -92,53 +105,80 @@
                 <i class="fab fa-mastodon fa-2x" aria-hidden="true"></i>
             </a>
         </li>
-        
+        -->
     </ul>
 </figure>
 
-<p>I am a PhD student in the Earth Systems Science department at the <a href="https://sustainability.stanford.edu/">Stanford
-Doerr School of Sustainability</a> studying our changing environment. I am part
-of the <a href="https://www.stanfordecholab.com/">EchoLab</a> advised by <a href="https://web.stanford.edu/~mburke/">Marshall Burke</a>. In the past, I was a
-pre-doctoral fellow at the Energy Policy Institute (EPIC) at the University of
-Chicago, working at the <a href="http://www.impactlab.org/">Climate Impact Lab</a>. In a previous life, I was a
-Data Scientist at <a href="http://www.datasciencepublicpolicy.org/">DSaPP</a> (now at CMU), and a career bureaucrat at the
-Central Bank of Colombia.</p>
-<h2 id="research-interests">research interests</h2>
-<p>I evaluate the effects of environmental changes on humans. I also develop
-machine learning to create cool datasets that help us track humans and nature
-in data-scarce scenarios. I am also curious about the atmospheric circulation
-and weather/climate modeling, particularly how to downscale climate products
-using physics-informed interpolations.</p>
+<p>I am a recent computer engineering graduate at the University of Toronto. Currently, 
+	I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI 
+	systems to ground visual object motions to DSL programs.
+
+My ultimate goal is in building socially-intelligent AI systems that are powerful, safe, 
+and interpretable. Pursuing this goal requires interdisciplinary work that I hope to explore 
+in the future, as it will require a blend of expertise in social sciences and in CS to accomplish this.
+
+Previously, I have worked with Prof. Hans-Arno Jacobsen at the MSRG lab at UofT, where I worked 
+on developing private distributed networks to examine the effects of transferring large data on 
+the throughput and latency of resource constrained distributed network.
+
+</p>
+
+<h2 id="motivating-questions">motivating questions (WIP)</h2>
+<ul>
+	<li>What constitutes social intelligence for AI systems? How will this align with human values?</li>
+	<li>How can we align machine and human representations of complex data across abstraction levels?</li>
+	<li>How can we enable these systems to learn in highly dense modalities at varying levels of abstraction?</li>
+	<li>What type of relationships should humans and their AI companions have with each other, and what should constitute 
+	the limitiations of these relationships?</li>
+	<li>How should we assess the safety risks of human-AI relationships?</li>
+	<li>How can we assess the risks associated to powerful AI systems, that have access to real world tools and data?</li>
+</ul>
+
+<h2 id="Ongoing Projects">Ongoing Projects </h2>
+
+<h3 id="MCTS-DPO">MCTS DPO for VLMs</h3>
+
+<p>VLMs are trained by using image-text pairs to map the image embedding space and the text embedding space into a 
+joint embedding space. However there exists three problems with this approach: 
+	
+	<ul>
+		<li>in comparsion to text, images are significantly denser modalities and hold much more noise</li>
+
+		<li>there exists an imbalance between the importance of visual tokens and text tokens in VLMs,
+		reducing how much attention visual tokens are given by VLMs </li>
+
+		<li>these systems struggle with solving complex questions that require multiple steps</li>
+	</ul>
+	
+Taking inspiration from the O1 model there is a requirement for building reasoning trees or graphs such that 
+we could reach a final conclusion by exploring the space of possible explanations. However the added modality 
+of vision makes this task more complex. In order to improve how we can reach a state of improving the "intuition" 
+of these systems we will need a policy that is able to reward the system step-wise rather than conclusion-wise. 
+This can be done using DPO.</p>
+
+<h3 id="diversifying-captions">Generating more diverse and better quality captions</h3>
+
+<p>
+In order to improve datasets we need to be able to create systems that are able to reason about images over 
+various abstraction levels. In order to do this we need to improve the development of our datasets. This 
+involves creating systems that can automatically do this. Problem: VLMs struggle to connect an object with 
+its parts. This makes creating detailed captions hard automatically. Potentially treating visual and text tokens 
+as machine translation can potentially improve this by treating it as a translation problem whose objective is not 
+necessarily the maximazation of hte log likelihood of the system, rather it should be able to look at the highest 
+likelihoods and use that to create captions. The density of images renders the max log likelihood answer implicitly 
+limited.
+</p>
+	
 <h2 id="publications">publications</h2>
 <ol>
 <li>
-<p>Bonilla-Mejia, L., &amp; <strong>Higuera-Mendieta, I.</strong> (2019). Protected Areas under
-Weak Institutions: Evidence from Colombia. <em>World Development</em>, 122.
-<a href="https://www.sciencedirect.com/science/article/pii/S0305750X19301718">doi:10.1016/j.worlddev.2019.06.019</a>.</p>
-<ul>
-<li>Ranked second-best paper by the International Sustainable Development
-Research Society.</li>
-<li>Press coverage: <a href="https://www.eltiempo.com/vida/medio-ambiente/deforestacion-en-colombia-territorios-colectivos-para-frenarla-379204">El Tiempo</a></li>
-</ul>
-</li>
-<li>
-<p>Rodolfa, K. T., Salomon, E., Haynes, L., <strong>Higuera-Mendieta, I</strong>, Larson, J.,
-&amp; Ghani, R. (2020). Case study: Predictive fairness to reduce misdemeanor
-recidivism through social service interventions. In Proceedings of the 2020
-conference on fairness, accountability, and transparency (142–153). FAT* &lsquo;20
-. <a href="https://arxiv.org/abs/2001.09233">https://arxiv.org/abs/2001.09233</a>.</p>
-</li>
-<li>
-<p>Farah, A., <strong>Higuera-Mendieta, I</strong>, Song, Y., Franke, J. A., Moyer, E.,
-&amp; Nakamura, N. (2020). Arctic airmass displacement and reduced midlatitudes
-wintertime temperature variability under climate change. <em>[In preparation for
-Geophysical Research Letters]</em>.</p>
-<ul>
-<li>Presented at the American Geophysical Union Meeting AGU  2020.</li>
-</ul>
+<p>Paulos, G., Zhang, T., Zhang, Y., Zhu G., Karimov, J., &amp; Jacobsen, HA. (2023). Efficient Data Transfer in 
+Shared-storage Cloud Data Processing Systems with OPTICS <em>CASCON'23</em>, 230-234.
+<a href="https://dl.acm.org/doi/abs/10.5555/3615924.3623630">paper</a>.</p>
+
 </li>
 </ol>
-
+	
 </div>
 
         </div><div id="footer" class="mb-5">

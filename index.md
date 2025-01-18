@@ -28,17 +28,6 @@ large data on the throughput and latency of resource constrained distributed net
   </div>
 </div>
 
-<table style="width: 100%; table-layout: fixed;">
-  <tr>
-    <td style="width: 50%; text-align: left; padding-right: 20px;">
-      
-    </td>
-    <td style="width: 50%; text-align: center;">
-      <img src="me.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; height: auto;">
-    </td>
-  </tr>
-</table>
-
 I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
 ground visual object motions to DSL programs.

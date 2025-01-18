@@ -64,8 +64,6 @@ This involves creating systems that can automatically do this. Problem: VLMs str
 parts. This makes creating detailed captions hard automatically. Potentially treating visual and text tokens as machine translation can potentially improve this by treating it as a translation problem whose objective is not necessarily 
 the maximazation of hte log likelihood of the system, rather it should be able to look at the highest likelihoods and use that to create captions. The density of images renders the max log likelihood answer implicitly limited. 
 
-## <u class="publications">publications</u>, <u class="working">working papers</u> & <u class="conferences">workshops</u>
- 
-<p>&nbsp;</p>
+## publications
 
 Gabriel Paulos, Tongkun Zhang, Yuqiu Zhang, Gerry Zhu, Jeyhun Karimov, and Hans Arno Jacobsen. 2023. Efficient Data Transfer in Shared-storage Cloud Data Processing Systems with OPTICS. In Proceedings of the 33rd Annual International Conference on Computer Science and Software Engineering (CASCON '23). IBM Corp., USA, 230–234.

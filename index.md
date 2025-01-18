@@ -26,7 +26,7 @@ large data on the throughput and latency of resource constrained distributed net
 
 <p style="text-align:center">
   <a href="mailto:gabrielp7700@gmail.com">Email</a> &nbsp;/&nbsp;
-  <a href="data/myCV.pdf">CV</a> &nbsp;/&nbsp;
+  <a href="myCV.pdf">CV</a> &nbsp;/&nbsp;
   <a href="https://ca.linkedin.com/in/gabriel-paulos">Linkedin</a> &nbsp;/&nbsp;
   <a href="https://github.com/gabriel-paulos/">Github</a>
 </p>

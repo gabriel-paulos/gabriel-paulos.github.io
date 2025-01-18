@@ -24,6 +24,13 @@ Previously, I have worked with Prof. Hans-Arno Jacobsen at the MSRG lab at UofT,
 worked on developing private distributed networks to examine the effects of transferring 
 large data on the throughput and latency of resource constrained distributed network.
 
+<p style="text-align:center">
+  <a href="mailto:gabrielp7700@gmail.com">Email</a> &nbsp;/&nbsp;
+  <a href="data/myCV.pdf">CV</a> &nbsp;/&nbsp;
+  <a href="https://ca.linkedin.com/in/gabriel-paulos">Linkedin</a> &nbsp;/&nbsp;
+  <a href="https://github.com/gabriel-paulos/">Github</a>
+</p>
+
 ## Motivating Questions (WIP)
   
   - What constitutes social intelligence for AI systems? How will this align with human
@@ -35,6 +42,7 @@ large data on the throughput and latency of resource constrained distributed net
   - How should we assess the safety risks of human-AI relationships?
   - How can we assess the risks associated to powerful AI systems, that have access to real
     world tools and data?
+
 
 
 ## Ongoing Projects (independent)

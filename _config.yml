@@ -31,5 +31,5 @@ nav:
    link: "/pinboard/"
  - name: "guestbook"
    link: "/guestbook/"
- - name: "about"
-   link: "/about/"
+ - name: "blog"
+   link: "/blog/"

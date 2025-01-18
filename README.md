@@ -1,10 +1,13 @@
+# my website
+
+
 # njoverton blog theme
 
 Theme for personal blog, hosted on Cloudflare Pages.
 
 ## Credits
 
-Forked from [researcher](https://github.com/ankitsultana/researcher) and adjusted to look like [parchment](https://github.com/rhl-bthr/parchment).
+Forked from [njoverton](https://github.com/njoverton/njoverton-website)
 
 ## License
 

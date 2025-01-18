@@ -26,9 +26,5 @@ sass:
     sass_dir: _sass
 
 nav:
- - name: "pinboard"
-   link: "/pinboard/"
- - name: "guestbook"
-   link: "/guestbook/"
  - name: "blog"
    link: "/blog/"

@@ -3,7 +3,7 @@ layout: post
 title: "Blog Plan"
 subtitle: "What is this blog for?"
 date: 2025-01-18
-tags: [numen, welcome]
+tags: [numen, welcome, guide]
 ---
 
 hello!

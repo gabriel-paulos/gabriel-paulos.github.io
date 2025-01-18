@@ -66,4 +66,4 @@ the maximazation of hte log likelihood of the system, rather it should be able t
 
 ## publications
 
-Gabriel Paulos, Tongkun Zhang, Yuqiu Zhang, Gerry Zhu, Jeyhun Karimov, and Hans Arno Jacobsen. 2023. Efficient Data Transfer in Shared-storage Cloud Data Processing Systems with OPTICS. In Proceedings of the 33rd Annual International Conference on Computer Science and Software Engineering (CASCON '23). IBM Corp., USA, 230–234.
+Gabriel Paulos, Tongkun Zhang, Yuqiu Zhang, Gerry Zhu, Jeyhun Karimov, and Hans Arno Jacobsen. 2023. Efficient Data Transfer in Shared-storage Cloud Data Processing Systems with OPTICS. In Proceedings of the 33rd Annual International Conference on Computer Science and Software Engineering (CASCON '23). IBM Corp., USA, 230–234.[paper](https://dl.acm.org/doi/pdf/10.5555/3615924.3623630)

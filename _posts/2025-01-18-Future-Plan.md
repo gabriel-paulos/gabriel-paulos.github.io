@@ -12,7 +12,7 @@ This blog is to help me stay accountable to learning and hopefully provide value
 
 In terms of what I will post: content related to my personal projects, educational content.
 
-I will be soon starting on writing: hallucinations of VLMs, then write about my MCTS and DPO project.
+I will be soon starting on writing: [hallucinations of VLMs](https://gabrielpaulos.com/Hallucinations/), then write about [my MCTS and DPO project](https://gabrielpaulos.com/MCTS-DPO/).
 
 Timeline? I will be trying to build everything live, as in I will publish as I go. Ideas are living things
 that live in their society. I hope to inspire others to view it similarly through my posts. Each blog post will be denoted by a tag as explained below:

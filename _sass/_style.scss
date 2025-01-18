@@ -96,52 +96,15 @@ hr {
 .wrapper {
     min-height: 100%;
 }
-/*
-figure {
-  text-align: center; /* Centers the image and caption 
-  margin: 0.2em 0;
-}
-
-figure img {
-  max-width: 100%; /* Ensures the image is responsive 
-  height: auto;
-}
-*/
-
-figure.item{
-	vertical-align:top;
-	display:block;
-	margin:1rem auto;
-	text-align:center;
-	float:right
-}
 
 img{
 	border-radius:70%;
 	float:right;
 	margin:-8px 0 0 16px;
-	height:250px;
-	width:240px
-}
-/*
-figure.item{
-	vertical-align: top;
-	display: block;
-	margin: $y-medium auto;
-	text-align: center;
-	float: right;
+	height:300px;
+	width:300px
 }
 
-img{
-	border-radius: 70%;
-        float: right;
-	object-fit: cover;
-        margin: -8px 0 0 16px;
-        height: $avatar-size;
-        width: $avatar-size - 10;
-
-}
-*/
 .post h1 {
   margin: 0;
   padding: 0;

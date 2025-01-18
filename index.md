@@ -15,7 +15,7 @@ I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI
 ground visual object motions to DSL programs.
 </p>
   </div>
-  <div style="flex: 1;">
+  <div style="flex: 1; align: right">
     <img src="me copy.jpg" alt="Sample Image" style="width: 100%; max-width: 250px; height: 250px; border-radius: 70%">
   </div>
 </div>

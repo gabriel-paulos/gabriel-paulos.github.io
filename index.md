@@ -24,7 +24,7 @@ worked on developing private distributed networks to examine the effects of tran
 large data on the throughput and latency of resource constrained distributed network.</p>
   </div>
   <div style="flex: 1;">
-    <img src="me.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; height: auto;">
+    <img src="me.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; height: 350px;">
   </div>
 </div>
 

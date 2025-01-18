@@ -4,7 +4,7 @@ ___
 
 
 
-## About Me## about me 
+## about me 
 
 {{< headshot src="me.jpg" name="" add="" >}}
 

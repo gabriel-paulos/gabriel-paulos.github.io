@@ -21,13 +21,15 @@ ground visual object motions to DSL programs.
   </div>
 </div>
 -->
-
+<div class="container">
 <figure class="item">
     <img src="me copy.jpg" alt=""/>
 </figure>
 <p>I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
 ground visual object motions to DSL programs.</p>
+  
+</div>
 
 I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 

@@ -1,9 +1,6 @@
 # my website
 
-
-# njoverton blog theme
-
-Theme for personal blog, hosted on Cloudflare Pages.
+Welcome
 
 ## Credits
 

@@ -8,7 +8,27 @@ permalink: /
 
 ## about me 
 
-<img class="profile-picture" src="me.jpg">
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 50%; text-align: left; padding-right: 20px;">
+      <p>I am a recent computer engineering graduate at the University of Toronto. Currently,
+I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
+ground visual object motions to DSL programs.
+</p>
+      <p>My ultimate goal is in building socially-intelligent AI systems that are powerful, safe,
+and interpretable. Pursuing this goal requires interdisciplinary work that I hope to 
+explore in the future, as it will require a blend of expertise in social sciences and in 
+CS to accomplish this.
+</p>
+      <p>Previously, I have worked with Prof. Hans-Arno Jacobsen at the MSRG lab at UofT, where I 
+worked on developing private distributed networks to examine the effects of transferring 
+large data on the throughput and latency of resource constrained distributed network.</p>
+    </td>
+    <td style="width: 50%; text-align: center;">
+      <img src="me.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; height: auto;">
+    </td>
+  </tr>
+</table>
 
 I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
@@ -18,9 +38,6 @@ My ultimate goal is in building socially-intelligent AI systems that are powerfu
 and interpretable. Pursuing this goal requires interdisciplinary work that I hope to 
 explore in the future, as it will require a blend of expertise in social sciences and in 
 CS to accomplish this.
-
-To this end, I have particular interests in exploring the alignment issues with AI systems,
-how best to track these changes, and how to 
 
 Previously, I have worked with Prof. Hans-Arno Jacobsen at the MSRG lab at UofT, where I 
 worked on developing private distributed networks to examine the effects of transferring 

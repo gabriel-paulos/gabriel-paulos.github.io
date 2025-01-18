@@ -19,7 +19,7 @@ markdown: kramdown
 tracking_id: #
 
 footer: yes
-footer_text: "Hello there stranger! Welcome to my address on the internet! "
+footer_text: "Hello there stranger! :alien: Welcome to my address on the internet! :shipit:"
 
 sass:
     style: compressed

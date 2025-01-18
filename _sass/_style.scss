@@ -19,8 +19,9 @@ body {
     margin: 0;
     font-family: "Verdana", Times, serif;
     height: 100%;
-	background-color: #FFFFDD;
-	//background-color: #0f021a;
+	//background-color: #FFFFDD;
+	background-color: #0f021a;
+	color: #c1bcc4;
 }
 a {
     text-decoration: none;
@@ -42,7 +43,8 @@ hr {
 
 #author-name {
     font-size: 30px;
-    color: #272727;
+    //color: #272727;
+    color: #FFFFFF;
     display: inline-block;
 }
 .navbar {

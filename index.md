@@ -8,7 +8,7 @@ permalink: /
 
 ## about me 
 
-<img src="me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto">
+<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto">
 
 
 I am a recent computer engineering graduate at the University of Toronto. Currently,
@@ -26,7 +26,7 @@ large data on the throughput and latency of resource constrained distributed net
 
 <p style="text-align:center">
   <a href="mailto:gabrielp7700@gmail.com">Email</a> &nbsp;/&nbsp;
-  <a href="myCV.pdf">CV</a> &nbsp;/&nbsp;
+  <a href="/assets/data/myCV.pdf">CV</a> &nbsp;/&nbsp;
   <a href="https://ca.linkedin.com/in/gabriel-paulos">Linkedin</a> &nbsp;/&nbsp;
   <a href="https://github.com/gabriel-paulos/">Github</a>
 </p>

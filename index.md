@@ -8,10 +8,9 @@ permalink: /
 
 ## about me 
 
-<table style="width: 100%; table-layout: fixed;">
-  <tr>
-    <td style="width: 50%; text-align: left; padding-right: 20px;">
-      <p>I am a recent computer engineering graduate at the University of Toronto. Currently,
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px;">
+  <div style="flex: 1; text-align: left;">
+   <p>I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
 ground visual object motions to DSL programs.
 </p>
@@ -23,6 +22,16 @@ CS to accomplish this.
       <p>Previously, I have worked with Prof. Hans-Arno Jacobsen at the MSRG lab at UofT, where I 
 worked on developing private distributed networks to examine the effects of transferring 
 large data on the throughput and latency of resource constrained distributed network.</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="me.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; height: 300px;">
+  </div>
+</div>
+
+<table style="width: 100%; table-layout: fixed;">
+  <tr>
+    <td style="width: 50%; text-align: left; padding-right: 20px;">
+      
     </td>
     <td style="width: 50%; text-align: center;">
       <img src="me.jpg" alt="Sample Image" style="width: 100%; max-width: 300px; height: auto;">

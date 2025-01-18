@@ -14,14 +14,6 @@ permalink: /
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
 ground visual object motions to DSL programs.
 </p>
-      <p>My ultimate goal is in building socially-intelligent AI systems that are powerful, safe,
-and interpretable. Pursuing this goal requires interdisciplinary work that I hope to 
-explore in the future, as it will require a blend of expertise in social sciences and in 
-CS to accomplish this.
-</p>
-      <p>Previously, I have worked with Prof. Hans-Arno Jacobsen at the MSRG lab at UofT, where I 
-worked on developing private distributed networks to examine the effects of transferring 
-large data on the throughput and latency of resource constrained distributed network.</p>
   </div>
   <div style="flex: 1;">
     <img src="me copy.jpg" alt="Sample Image" style="width: 100%; max-width: 250px; height: 250px; border-radius: 70%">

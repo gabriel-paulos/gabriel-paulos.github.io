@@ -7,7 +7,7 @@ permalink: /
 
 
 ## about me 
-
+<div>
 <img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto">
 
 
@@ -30,7 +30,7 @@ large data on the throughput and latency of resource constrained distributed net
   <a href="https://ca.linkedin.com/in/gabriel-paulos">Linkedin</a> &nbsp;/&nbsp;
   <a href="https://github.com/gabriel-paulos/">Github</a>
 </p>
-
+</div>
 ## Motivating Questions (WIP)
   
   - What constitutes social intelligence for AI systems? How will this align with human
@@ -50,19 +50,18 @@ large data on the throughput and latency of resource constrained distributed net
 ### **MCTS DPO for VLMs:**
 
 VLMs are trained by using image-text pairs to map the image embedding space
-and the text embedding space into a joint embedding space. However there exists two problems with
-this approach: the first being that images are significantly denser modalities than text and hold much more noise than text could ever possibly hold, secondly there exists an imbalance with the ratio between visual tokens and text tokens in these systems as there are way more text tokens than visual tokens, lastly it struggles with solving complex questions that require multiple steps.
-   
+and the text embedding space into a joint embedding space. However there exists problems with
+this approach: the first being that images are extremely information dense in comparison to text (making it more noisy at specific levels of abstraction or fine-grainedness), secondly VLMs are prone to bias towards the biases of its LLM component, lastly it struggles with solving complex questions that require multi-step reasoning. 
+
 Similar to O1 there is a requirement for building reasoning trees or graphs such that we could reach a final conclusion
-by exploring the space of possible explanations. However the added modality of vision makes this task more complex. In order to improve how we can reach a state of improving the "intuition" of these systems we will need a policy that is able to reward the system step-wise rather than conclusion-wise. This can be done using DPO.
+by exploring the space of possible explanations. However the added modality of vision introduces potential counterfacutal information [1](https://arxiv.org/pdf/2310.06627). In order to improve how we can reach a state of improving the "intuition" of these systems we will need a policy that is able to reward the system step-wise rather than conclusion-wise. This can be done using iterative learning [2](https://arxiv.org/pdf/2405.00451).
 
 ### **Generating better captions by treating visual and text tokens as a form of machine translation:**
 
 In order to improve datasets we need to be able to create systems that are able to reason about images
 over various abstraction levels. In order to do this we need to improve the development of our datasets. 
 This involves creating systems that can automatically do this. Problem: VLMs struggle to connect an object with its
-parts. This makes creating detailed captions hard automatically. Potentially treating visual and text tokens as machine translation can potentially improve this by treating it as a translation problem whose objective is not necessarily 
-the maximazation of hte log likelihood of the system, rather it should be able to look at the highest likelihoods and use that to create captions. The density of images renders the max log likelihood answer implicitly limited. 
+parts. This makes automatic detailed caption annotation difficult. Potentially, treating visual and text tokens as machine translation can lead towards improvement in this area. A key objective that has been overlooked by current caption models is diversity of caption quality. Given the richness of the modality, a top-k approach should be taken, as the maximization of log likelihood makes captions rather limited. I am currently exploring this. 
 
 ## publications
 

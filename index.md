@@ -54,7 +54,7 @@ and the text embedding space into a joint embedding space. However there exists 
 this approach: the first being that images are extremely information dense in comparison to text (making it more noisy at specific levels of abstraction or fine-grainedness), secondly VLMs are prone to bias towards the biases of its LLM component, lastly it struggles with solving complex questions that require multi-step reasoning. 
 
 Similar to O1 there is a requirement for building reasoning trees or graphs such that we could reach a final conclusion
-by exploring the space of possible explanations. However the added modality of vision introduces potential counterfacutal information [1](https://arxiv.org/pdf/2310.06627). In order to improve how we can reach a state of improving the "intuition" of these systems we will need a policy that is able to reward the system step-wise rather than conclusion-wise. This can be done using iterative learning [2](https://arxiv.org/pdf/2405.00451).
+by exploring the space of possible explanations. However the added modality of vision introduces potential counterfacutal information [[1]](https://arxiv.org/pdf/2310.06627). In order to improve how we can reach a state of improving the "intuition" of these systems we will need a policy that is able to reward the system step-wise rather than conclusion-wise. This can be done using iterative learning [[2]](https://arxiv.org/pdf/2405.00451).
 
 ### **Generating better captions by treating visual and text tokens as a form of machine translation:**
 

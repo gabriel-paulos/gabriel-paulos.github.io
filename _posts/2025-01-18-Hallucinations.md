@@ -28,7 +28,7 @@ Agenda:
 Vision Language Models or sometimes referred to as LVLMs (Large Vision Language Models) are models that learn using the modalities of images and text. These models work well in zero-shot settings for object localization, image recognition and visual question answering among other things. Examples of VLMs include LLaVA, the DeepSeek VL model, OLMo. There exists a couple of training objectives for VLMs: contrastive, masking, and generative [[1](https://arxiv.org/pdf/2405.17247)]. The most popular method for construcitng these models is to use pre-trained backbones, as it is one of the cheapest and fastest ways to build a VLM. These systems are realized using a projection matrix to create a joint embedding space between the (pre-trained) CLIP encoder and a LLM model. Due to the popularity of such models I will be focusing this article on these types of VLMs.
 
 <p>
-    <img src="/assets/images/Hallucination_blog_fig_1" alt="Families of VLMs" style="width: 70%">
+    <img_posts src="/assets/images/Hallucination_blog_fig_1" alt="Families of VLMs" style="width: 70%">
     <em>Fig.1: Image of Families of VLMs (source: <a href="https://arxiv.org/pdf/2405.17247"> (Bordes et al. 2024) </a></em>
 </p>
 

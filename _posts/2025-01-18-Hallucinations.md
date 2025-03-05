@@ -110,3 +110,5 @@ Below I will include some of these solutions (this will be fleshed out):
 ## <a name="appendix">Appendix: Evaluation Benchmarks</a>
 
 POPE: https://github.com/RUCAIBox/POPE 
+
+CHAIR: https://arxiv.org/pdf/1809.02156

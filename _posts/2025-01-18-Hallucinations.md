@@ -16,9 +16,6 @@ Partial Inspiration: [paper](https://lilianweng.github.io/posts/2024-07-07-hallu
 - [What are VLMs](#what)
 - [Training Methods](#training)
 - [VLM Hallucinations](#hallucinations)
-    -[LLMs](#llms)
-    -[VLMs](#vlms)
-    -[Differences](#diffs) 
 - [Taxonomy of Hallucinations for VLMs](#taxonomy)
 - [Mitigation Methods](#mitigation)
 - [Citations](#citations)
@@ -55,7 +52,7 @@ I would like to further explore image-biased hallucinations as they have not bee
 
 ### <a name="diffs">Are VLMs more hallucination prone that LLMs? Why or why not? </a>
 
-Due to the rich nature of the visual modality and the training objectives of VLMs, these systems are more prone to hallucinations than normal LLMs. This manifests itself in these systems being extremely fragile to changes in answer permutations for Multiple Choice Question Answering (MCQA) and restricts its ability to visually reason [3](https://arxiv.org/pdf/2310.01651) [4](https://arxiv.org/pdf/2310.06627). VLMs actually exhibit *worse* performance in spatial reasoning tasks  
+Due to the rich nature of the visual modality and the training objectives of VLMs, these systems are more prone to hallucinations than normal LLMs. This manifests itself in these systems being extremely fragile to changes in answer permutations for Multiple Choice Question Answering (MCQA) and restricts its ability to visually reason [3](https://arxiv.org/pdf/2310.01651) [4](https://arxiv.org/pdf/2310.06627). VLMs actually exhibit *worse* performance in spatial reasoning tasks when visual input is included [5](https://arxiv.org/html/2406.14852v2#S3). The fact of the matter is that this makes VLMs a higher risk than LLM when attacked adversarially.  
 
 ## <a name="Mitigation">Current Hallucination Mitigation methods for VLMs?</a>
 
@@ -64,6 +61,26 @@ There exist numerous proposed solutions to different types of VLM hallucinations
 - Finetuning 
 - Post training RLHF and DPO 
 - Contrastive decoding techniques
+
+Below I will include some of these solutions:
+
+[V-DPO](https://arxiv.org/abs/2411.02712)
+
+[IBD](https://arxiv.org/pdf/2402.18476)
+
+[MIA-DPO](https://arxiv.org/pdf/2410.17637)
+
+[CLIP-DPO](https://arxiv.org/pdf/2408.10433)
+
+[HA-DPO](https://opendatalab.github.io/HA-DPO/)
+
+[OPA-DPO](https://arxiv.org/pdf/2501.09695)
+
+[SUMGD](https://arxiv.org/pdf/2410.13321)
+
+[ISR-DPO](https://arxiv.org/pdf/2406.11280)
+
+
 
 ## <a name="citations">Citations</a>Citations
 
@@ -74,6 +91,8 @@ There exist numerous proposed solutions to different types of VLM hallucinations
 [3](https://arxiv.org/pdf/2310.01651)
 
 [4](https://arxiv.org/pdf/2310.06627)
+
+
 
 ## <a name="appendix">Appendix: Evaluation Benchmarks</a>
 

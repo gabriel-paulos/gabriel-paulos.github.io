@@ -41,6 +41,11 @@ These can be trained in similar ways to LLMs. Some of the training methods inclu
 
 The struggles with hallucinations for LLMs are well documented in text generation. The same problems occur and appear more grave for VLMs (Vision Language Models), specifically in the context of long-form visual reasoning. Below we will go through common VLM hallucinations and some of the reasons why they occur. 
 
+<p>
+    <img src="/assets/images/Hallucination_blog_fig_1" alt="Families of VLMs" class="img-posts">
+    <em>Fig.1: Image of Families of VLMs (source: <a href="https://arxiv.org/pdf/2405.17247"> (Bordes et al. 2024) </a></em>
+</p>
+
 
 VLM hallucinations differ from normal LLM hallucinations as the latent space for VLMs is more coarse than the latent space for LLMs. This has to do with a carousel of reasons: from the architecture of VLMs, the tendency of VLMs to bias their outputs more on the text modality, the loss function used to align the CLIP and LLM modules, misalignment with abstract human concepts and CLIP’s latent space. In fact, there is reason to believe that the embedding space used by VLMs does not include a rich representation of visual tokens [[2](https://arxiv.org/pdf/2407.06581)].
 

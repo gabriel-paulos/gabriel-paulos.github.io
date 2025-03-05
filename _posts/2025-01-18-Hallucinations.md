@@ -29,7 +29,7 @@ Vision Language Models or sometimes referred to as LVLMs (Large Vision Language 
 
 <p>
     <img src="/assets/images/Hallucination_blog_fig_1" alt="Families of VLMs" style="width: 70%">
-    <em>Fig.1: Image of Families of VLMs (source: [[Bordes et al. 2024](https://arxiv.org/pdf/2405.17247)]</em>
+    <em>Fig.1: Image of Families of VLMs (source: <a href="https://arxiv.org/pdf/2405.17247"> (Bordes et al. 2024) </a></em>
 </p>
 
 ## <a name="training"></a>How are they trained?

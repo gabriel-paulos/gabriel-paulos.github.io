@@ -3,7 +3,7 @@ layout: post
 title: "Hallucinations of VLMs"
 subtitle: "Are you sure that you saw that?"
 date: 2025-03-04
-tags: [embryo, VLMs, hallucination]
+tags: [child, VLMs, hallucination]
 ---
 
 Motivating Question: Why do VLMs hallucinate? Why do they hallucinate **_more than_** LLMs? Can we do anything about it?

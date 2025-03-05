@@ -44,6 +44,8 @@ The struggles with hallucinations for LLMs are well documented in text generatio
 
 VLM hallucinations differ from normal LLM hallucinations as the latent space for VLMs is more coarse than the latent space for LLMs. This has to do with a carousel of reasons: from the architecture of VLMs, the tendency of VLMs to bias their outputs more on the text modality, the loss function used to align the CLIP and LLM modules, misalignment with abstract human concepts and CLIP’s latent space. In fact, there is reason to believe that the embedding space used by VLMs does not include a rich representation of visual tokens [[2](https://arxiv.org/pdf/2407.06581)].
 
+
+
 ## <a name="taxonomy">Taxonomy of VLM hallucinations</a>:
 
 - Misalignment between text and image modality
@@ -66,6 +68,7 @@ There exist numerous proposed solutions to different types of VLM hallucinations
 - Finetuning 
 - Post training RLHF and DPO 
 - Contrastive decoding techniques
+- Attention Calibration Methods
 
 Below I will include some of these solutions (this will be fleshed out):
 

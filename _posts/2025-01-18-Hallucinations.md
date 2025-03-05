@@ -62,7 +62,7 @@ There exist numerous proposed solutions to different types of VLM hallucinations
 - Post training RLHF and DPO 
 - Contrastive decoding techniques
 
-Below I will include some of these solutions:
+Below I will include some of these solutions (this will be fleshed out):
 
 [V-DPO](https://arxiv.org/abs/2411.02712)
 

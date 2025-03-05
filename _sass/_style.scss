@@ -106,6 +106,12 @@ h2 {
     min-height: 100%;
 }
 
+figure {
+    display: inline-block;    /* Ensures figure takes only as much width as needed */
+    text-align: center;       /* Centers the content inside the figure, including the caption */
+    margin: 0;                /* Removes any default margin */
+}
+
 .img-bio{
 	border-radius:70%;
 	float:right;

@@ -8,7 +8,7 @@ permalink: /
 
 ## about me 
 <div class="container">
-<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto" margin-bottom: 1em;>
+<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto"; margin-bottom: 1em;>
 
 
 I am a recent computer engineering graduate at the University of Toronto. Currently,

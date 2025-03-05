@@ -52,7 +52,7 @@ I would like to further explore image-biased hallucinations as they have not bee
 
 ### <a name="diffs">Are VLMs more hallucination prone that LLMs? Why or why not? </a>
 
-Due to the rich nature of the visual modality and the training objectives of VLMs, these systems are more prone to hallucinations than normal LLMs. This manifests itself in these systems being extremely fragile to changes in answer permutations for Multiple Choice Question Answering (MCQA) and restricts its ability to visually reason [3](https://arxiv.org/pdf/2310.01651) [4](https://arxiv.org/pdf/2310.06627). VLMs actually exhibit *worse* performance in spatial reasoning tasks when visual input is included [5](https://arxiv.org/html/2406.14852v2#S3). The fact of the matter is that this makes VLMs a higher risk than LLM when attacked adversarially.  
+Due to the rich nature of the visual modality and the training objectives of VLMs, these systems are more prone to hallucinations than normal LLMs. This manifests itself in these systems being extremely fragile to changes in answer permutations for Multiple Choice Question Answering (MCQA) and restricts its ability to visually reason [[3](https://arxiv.org/pdf/2310.01651)], [[4](https://arxiv.org/pdf/2310.06627)]. VLMs actually exhibit *worse* performance in spatial reasoning tasks when visual input is included [[5](https://arxiv.org/html/2406.14852v2#S3)]. The fact of the matter is that this makes VLMs a higher risk than LLM when attacked adversarially.  
 
 ## <a name="Mitigation">Current Hallucination Mitigation methods for VLMs?</a>
 
@@ -84,13 +84,13 @@ Below I will include some of these solutions (this will be fleshed out):
 
 ## <a name="citations">Citations</a>Citations
 
-[1](https://arxiv.org/pdf/2405.17247)
+[[1](https://arxiv.org/pdf/2405.17247)]
 
-[2](https://arxiv.org/pdf/2407.06581)
+[[2](https://arxiv.org/pdf/2407.06581)]
 
-[3](https://arxiv.org/pdf/2310.01651)
+[[3](https://arxiv.org/pdf/2310.01651)]
 
-[4](https://arxiv.org/pdf/2310.06627)
+[[4](https://arxiv.org/pdf/2310.06627)]
 
 
 

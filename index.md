@@ -8,9 +8,8 @@ permalink: /
 
 ## about me 
 
-<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto;">
+<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 80%; max-width: 300px; max-height:auto;">
 
-<div style='margin-top: 2em;'>
 I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
 ground visual object motions to DSL programs.
@@ -30,7 +29,7 @@ large data on the throughput and latency of resource constrained distributed net
   <a href="https://ca.linkedin.com/in/gabriel-paulos">Linkedin</a> &nbsp;/&nbsp;
   <a href="https://github.com/gabriel-paulos/">Github</a>
 </p>
-</div>
+
 ## Motivating Questions (WIP)
   
   - What constitutes social intelligence for AI systems? How will this align with human

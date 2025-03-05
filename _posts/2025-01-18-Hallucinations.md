@@ -42,8 +42,8 @@ These can be trained in similar ways to LLMs. Some of the training methods inclu
 The struggles with hallucinations for LLMs are well documented in text generation. The same problems occur and appear more grave for VLMs (Vision Language Models), specifically in the context of long-form visual reasoning. Below we will go through common VLM hallucinations and some of the reasons why they occur. 
 
 <p>
-    <img src="/assets/images/Hallucination_blog_fig_1" alt="Families of VLMs" class="img-posts">
-    <em>Fig.1: Image of Families of VLMs (source: <a href="https://arxiv.org/pdf/2405.17247"> (Bordes et al. 2024) </a></em>
+    <img src="/assets/images/HalluEx.png" alt="Language Prior Hallucination" class="img-posts">
+    <em>Fig.2: Image of Families of VLMs (source: <a href="https://arxiv.org/pdf/2502.12359"> (Wu et al. 2025) </a></em>
 </p>
 
 

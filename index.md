@@ -7,10 +7,10 @@ permalink: /
 
 
 ## about me 
-<div class="container">
-<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto";>
 
+<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 70%; max-width: 300px; max-height:auto;">
 
+<div style='margin-top: 2em;'>
 I am a recent computer engineering graduate at the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 
 ground visual object motions to DSL programs.

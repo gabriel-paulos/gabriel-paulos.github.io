@@ -25,7 +25,7 @@ Agenda:
 
 ## <a name="what">What are VLMs?</a>
 
-Vision Language Models or sometimes referred to as LVLMs (Large Vision Language Models) are models that learn using the modalities of images and text. These models work well in zero-shot settings for object localization, image recognition and visual question answering among other things. Examples of VLMs include LLaVA, the DeepSeek VL model, OLMO. There exists a couple of training objectives for VLMs: contrastive, masking, and generative [1](https://arxiv.org/pdf/2405.17247). The most popular method for construcitng these models is to use pre-trained backbones, as it is one of the cheapest and fastest ways to build a VLM. These systems are realized using a projection matrix to create a joint embedding space between the (pre-trained) CLIP encoder and a LLM model. Due to the popularity of such models I will be focusing this article on these types of VLMs.
+Vision Language Models or sometimes referred to as LVLMs (Large Vision Language Models) are models that learn using the modalities of images and text. These models work well in zero-shot settings for object localization, image recognition and visual question answering among other things. Examples of VLMs include LLaVA, the DeepSeek VL model, OLMO. There exists a couple of training objectives for VLMs: contrastive, masking, and generative [[1](https://arxiv.org/pdf/2405.17247)]. The most popular method for construcitng these models is to use pre-trained backbones, as it is one of the cheapest and fastest ways to build a VLM. These systems are realized using a projection matrix to create a joint embedding space between the (pre-trained) CLIP encoder and a LLM model. Due to the popularity of such models I will be focusing this article on these types of VLMs.
 
 ## <a name="training"></a>How are they trained?
 
@@ -37,7 +37,7 @@ These can be trained in similar ways to LLMs. Some of the training methods inclu
 The struggles with hallucinations for LLMs are well documented in text generation. The same problems occur and appear more grave for VLMs (Vision Language Models), specifically in the context of long-form visual reasoning. Below we will go through common VLM hallucinations and some of the reasons why they occur. 
 
 
-VLM hallucinations differ from normal LLM hallucinations as the latent space for VLMs is more coarse than the latent space for LLMs. This has to do with a carousel of reasons: from the architecture of VLMs, the tendency of VLMs to bias their outputs more on the text modality, the loss function used to align the CLIP and LLM modules, misalignment with abstract human concepts and CLIP’s latent space. In fact, there is reason to believe that the embedding space used by VLMs does not include a rich representation of visual tokens [2](https://arxiv.org/pdf/2407.06581).
+VLM hallucinations differ from normal LLM hallucinations as the latent space for VLMs is more coarse than the latent space for LLMs. This has to do with a carousel of reasons: from the architecture of VLMs, the tendency of VLMs to bias their outputs more on the text modality, the loss function used to align the CLIP and LLM modules, misalignment with abstract human concepts and CLIP’s latent space. In fact, there is reason to believe that the embedding space used by VLMs does not include a rich representation of visual tokens [[2](https://arxiv.org/pdf/2407.06581)].
 
 ## <a name="taxonomy">Taxonomy of VLM hallucinations</a>:
 

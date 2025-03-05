@@ -8,7 +8,7 @@ permalink: /
 
 ## about me 
 
-<img src="/assets/images/me copy.jpg" alt="Sample Image" style="border-radius: 80%; max-width: 300px; max-height:auto;">
+<img src="/assets/images/me copy.jpg" alt="Sample Image" class="img-bio" style="border-radius: 80%; max-width: 300px; max-height:auto;">
 
 I am a recent computer engineering graduate from the University of Toronto. Currently,
 I am currently collaborating with Prof. Xujie Si on developing neuro-symbolic AI systems to 

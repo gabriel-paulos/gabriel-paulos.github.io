@@ -14,8 +14,8 @@ In terms of what I will post: content related to my personal projects, education
 
 I will be soon starting on writing: [hallucinations of VLMs](https://gabrielpaulos.com/Hallucinations/), then write about [my MCTS and DPO project](https://gabrielpaulos.com/MCTS-DPO/).
 
-Timeline? I will be trying to build everything live, as in I will publish as I go. Ideas are living things
-that live in their society. I hope to inspire others to view it similarly through my posts. Each blog post will be denoted by a tag as explained below:
+Timeline? I will be trying to build everything live, as in I will publish as I go. I like to think of ideas as living things
+that live in their own society. I hope to inspire others to view it similarly through my posts. Each blog post will be denoted by a tag as explained below:
 
 lifecycle tag  | Stage Explanation 
 ----|--------

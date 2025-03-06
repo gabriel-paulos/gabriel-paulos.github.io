@@ -17,6 +17,7 @@ Partial Inspiration: [paper](https://lilianweng.github.io/posts/2024-07-07-hallu
 - [Training Methods](#training)
 - [VLM Hallucinations](#hallucinations)
 - [Taxonomy of Hallucinations for VLMs](#taxonomy)
+- [Hallucination Detection](#detection)
 - [Mitigation Methods](#mitigation)
 - [Citations](#citations)
 - [Appendix](#appendix)
@@ -49,7 +50,9 @@ The struggles with hallucinations for LLMs are well documented in text generatio
 
 VLM hallucinations differ from normal LLM hallucinations as the latent space for VLMs is more coarse than the latent space for LLMs. This has to do with a carousel of reasons: from the architecture of VLMs, the tendency of VLMs to bias their outputs more on the text modality, the loss function used to align the CLIP and LLM modules, misalignment with abstract human concepts and CLIP’s latent space. In fact, there is reason to believe that the embedding space used by VLMs does not include a rich representation of visual tokens [[2](https://arxiv.org/pdf/2407.06581)].
 
+### <a name="diffs">Are VLMs more hallucination prone that LLMs? Why or why not? </a>
 
+Due to the rich nature of the visual modality and the training objectives of VLMs, these systems are more prone to hallucinations than normal LLMs. This manifests itself in these systems being extremely fragile to changes in answer permutations for Multiple Choice Question Answering (MCQA) and restricts its ability to visually reason [[3](https://arxiv.org/pdf/2310.01651)], [[4](https://arxiv.org/pdf/2310.06627)]. VLMs actually exhibit *worse* performance in spatial reasoning tasks when visual input is included [[5](https://arxiv.org/html/2406.14852v2#S3)]. The fact of the matter is that this makes VLMs a higher risk than LLM when attacked adversarially.  
 
 ## <a name="taxonomy">Taxonomy of VLM hallucinations</a>:
 
@@ -61,10 +64,32 @@ VLM hallucinations differ from normal LLM hallucinations as the latent space for
  
 I would like to further explore image-biased hallucinations as they have not been formally explored but can pose extreme difficulties given the fragile nature of VLMs to prompts, due to the biased nature they have towards text tokens.
 
+## <a name="detection">Hallucination Detection</a>
 
-### <a name="diffs">Are VLMs more hallucination prone that LLMs? Why or why not? </a>
+There are various metrics used to evaulate how hallucination prone models are. These will be discussed in the appendix. 
 
-Due to the rich nature of the visual modality and the training objectives of VLMs, these systems are more prone to hallucinations than normal LLMs. This manifests itself in these systems being extremely fragile to changes in answer permutations for Multiple Choice Question Answering (MCQA) and restricts its ability to visually reason [[3](https://arxiv.org/pdf/2310.01651)], [[4](https://arxiv.org/pdf/2310.06627)]. VLMs actually exhibit *worse* performance in spatial reasoning tasks when visual input is included [[5](https://arxiv.org/html/2406.14852v2#S3)]. The fact of the matter is that this makes VLMs a higher risk than LLM when attacked adversarially.  
+Various benchmarks have been constructed to detect hallucinations. The hope of using these hallucination detection methods is to gather a large enough dataset of negative and positive samples such that these hallucinations can be trained away. However, we remain far from that reality. For one we do not have an agreed upon evaluation metric. Nor, do we have satisfactory evaluation benchmark format to probe the understanding of these models. These evaluation metrics use hallucination metrics that will be discussed in detail in the appendix. Currently, there exists two types of evaluation benchmarks:
+
+- Generative evaluations
+- Discriminative evaluations
+
+Generative evaluations apply VLMs to describe the image then evaluate the completions of the VLMs outputs using LLM evaluators. An example of the difference between a discriminative and a generative evaluation framework is shown below. A limitation of this type of evaluation is dependent on the ability of LLMs to remain faithful to the answer, a bar that is rather unstable. 
+
+<figure>
+    <img src="/assets/images/GenVsDisc" alt="Generative vs discriminative task difference" class="img-posts">
+    <figcaption>Fig.3: Generative vs Discriminative format difference (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024) </a></figcaption>
+</figure>
+
+Discriminative evaluations are asked about the existence of objects in an image, in which the VLM must answer in a yes-or-no format. This is very limited and is more an artifiact of the previous benchmarks used before the invention of VLM models (I am speaking pre-2023). However, they still remain a go-to method for hallucination as they are quite cheap to verify and to create. 
+
+Both of these types of evaluations are inherently limited in their ability to probe and define hallucinations found within these systems. Recently, there have been efforts in creating evaluations that include generative and discriminative evaluation tasks. AMBER (https://arxiv.org/abs/2311.07397) uses no LLM evaluator, instead using a new metric named AMBER score (which utilizes the CHAIR metric as part of its score). This metric will be further discussed in the appendix. However the format of AMBER benchmark’s task format remains similar to other traditional discriminative and generative benchmarks’ task formats. LongHalQA is a recent effort within the class of benchmarks that contain generative and discriminative tasks. However it differentiates itself two-fold: by including evaluations with and without LLM-evaluators, and by formating tasks as a multi-choice question-answering task. This departure seems to be quite useful as it significantly lowers evaluation times, especially compared to generative evaluations.
+
+<figure>
+    <img src="/assets/images/LongHalQA" alt="Comparison of evaluation times required to complete 1000 image-text pairs for different benchmarks" class="img-posts">
+    <figcaption>Fig.4: The following comparison evaluates the  (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024) </a></figcaption>
+</figure>
+
+Future evaluations should look more in depth into creating subject-specific benchmarks in a similar vain to LongHalQA. However, there remains much room for exploration specifically in the creation of hallucination tasks that evaluate the reasoning ability of these models. 
 
 ## <a name="Mitigation">Current Hallucination Mitigation methods for VLMs?</a>
 

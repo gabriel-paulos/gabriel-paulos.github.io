@@ -56,14 +56,22 @@ Due to the rich nature of the visual modality and the training objectives of VLM
 
 ## <a name="taxonomy">Taxonomy of VLM hallucinations</a>:
 
-- Misalignment between text and image modality
-- In-Context: where the hallucination has to do with the VLM not aligning itself with the interaction it is a part of
-- Bias towards linguistic priors (IBD: Alleviating Hallucinations in Large Vision-Language Models via Image-Biased Decoding), specifically in long text
-- Benign Hallucination: When a linguistic prior has a bias that is acutally present in the image that it retrieves without any focus on the image
-- Image-biased hallucination: the visual content conflicts with the langugage model’s world knowledge
- 
-I would like to further explore image-biased hallucinations as they have not been formally explored but can pose extreme difficulties given the fragile nature of VLMs to prompts, due to the biased nature they have towards text tokens.
+Broadly hallucinations come in two forms: limitations in understanding input images, and the overreliance of lingusitic priors of the LLM. However this manifests itself in various ways:
 
+	- Identification and localization of non-existent objects in the input image 
+	- Object, Attribute, relational hallucinations (Same as above basically)
+	- Action/verb-related Concepts (https://arxiv.org/pdf/2412.14487)
+	- Misunderstanding of spatial relations between objects in an input image
+	- Miscounting objects in the image
+	-  Event Hallucination: Describes a non-existent target and constructs completely non-existent events around those imagined targets, including its attributes, relations and actions.  (ref: https://arxiv.org/pdf/2402.15721)
+	- Modality conflict between the text and image components (arXiv:2403.11116)
+ 
+Below are basically sub-sections
+	- Bias towards Linguistic Priors: specifically in long context or long answers where previous text influences the current output (ref: https://arxiv.org/pdf/2501.15046); or in situations where the input image and a the language model’s world knowledge disagree
+	- Benign Hallucination: When a linguistic prior is found within the input image, and is used without any regards towards the representations found within the image; a second version of this would be when the model hallucinates without any adverse effects on its final answer in a VQA dataset.
+	- Image-biased Hallucination: The visual content conflicts with the language model’s world knowledge, and steers the model towards generating false premises, example shown below
+	- Counterfactual reasoning 
+(IBD image here) 
 ## <a name="detection">Hallucination Detection</a>
 
 There are various metrics used to evaulate how hallucination prone models are. These will be discussed in the appendix. 

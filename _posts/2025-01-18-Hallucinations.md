@@ -97,7 +97,7 @@ Both of these types of evaluations are inherently limited in their ability to pr
 
 <figure>
     <img src="/assets/images/LongHalQA" alt="Comparison of evaluation times required to complete 1000 image-text pairs for different benchmarks" class="img-posts">
-    <figcaption>Fig.4: The following comparison evaluates the  (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024) </a></figcaption>
+    <figcaption>Fig.4: The following comparison evaluates the  (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024)) </a></figcaption>
 </figure>
 
 Future evaluations should look more in depth into creating subject-specific benchmarks in a similar vain to LongHalQA. However, there remains much room for exploration specifically in the creation of hallucination tasks that evaluate the reasoning ability of these models. 

@@ -6,6 +6,10 @@ date: 2025-03-04
 tags: [child, VLMs, hallucination]
 ---
 
+Note: That the below is a continous work in progress. This blog's ethos of writing posts is ellaborated [here](./2025-01-18-Future-Plan.md).
+All changes can be seen by looking at the history of the markdown file, [here](https://github.com/gabriel-paulos/gabriel-paulos.github.io/blob/theme-edits/_posts/2025-01-18-Hallucinations.md).
+
+
 Motivating Question: Why do VLMs hallucinate? Why do they hallucinate **_more than_** LLMs? Can we do anything about it?
 
 Partial Inspiration: [paper](https://lilianweng.github.io/posts/2024-07-07-hallucination/)
@@ -22,7 +26,7 @@ Partial Inspiration: [paper](https://lilianweng.github.io/posts/2024-07-07-hallu
 - [Citations](#citations)
 - [Appendix](#appendix)
 
-Agenda:
+
 
 ## <a name="what">What are VLMs?</a>
 

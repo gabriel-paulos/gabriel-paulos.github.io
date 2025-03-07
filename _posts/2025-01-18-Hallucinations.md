@@ -49,7 +49,7 @@ The struggles with hallucinations for LLMs are well documented in text generatio
 <figure>
     <img src="/assets/images/HalluEx.png" alt="Language Prior Hallucination" class="img-posts">
     <figcaption>Fig.2: Example of a hallucination caused by the language priors of the model (source: <a href="https://arxiv.org/pdf/2502.12359"> (Wu et al. 2025)) </a></figcaption>
-	</br></br>
+	<br> <br>
 </figure>
 
 
@@ -94,7 +94,7 @@ Generative evaluations apply VLMs to describe the image then evaluate the comple
 <figure>
     <img src="/assets/images/GenVsDisc" alt="Generative vs discriminative task difference" class="img-posts">
     <figcaption>Fig.3: Generative vs Discriminative format difference (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024)) </a></figcaption>
-</br></br>
+<br> <br>
 </figure>
 
 Discriminative evaluations are asked about the existence of objects in an image, in which the VLM must answer in a yes-or-no format. This is very limited and is more an artifiact of the previous benchmarks used before the invention of VLM models (I am speaking pre-2023). However, they still remain a go-to method for hallucination as they are quite cheap to verify and to create. 
@@ -104,7 +104,7 @@ Both of these types of evaluations are inherently limited in their ability to pr
 <figure>
     <img src="/assets/images/LongHalQA" alt="Comparison of evaluation times required to complete 1000 image-text pairs for different benchmarks" class="img-posts">
     <figcaption>Fig.4: The following comparison evaluates the  (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024)) </a></figcaption>
-</br></br>
+<br> <br>
 </figure>
 
 Future evaluations should look more in depth into creating subject-specific benchmarks in a similar vain to LongHalQA. However, there remains much room for exploration specifically in the creation of hallucination tasks that evaluate the reasoning ability of these models or in having a dialogue-level hallucination evaluation benchmark (https://aclanthology.org/2024.findings-emnlp.529.pdf). 

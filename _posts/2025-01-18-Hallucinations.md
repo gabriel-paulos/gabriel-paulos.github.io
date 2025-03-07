@@ -6,7 +6,7 @@ date: 2025-03-04
 tags: [child, VLMs, hallucination]
 ---
 
-Note: That the below is a continous work in progress. This blog's ethos of writing posts is ellaborated [here](../2025-01-18-Future-Plan.md).
+Note: That the below is a continous work in progress. This blog's ethos of writing posts is ellaborated [here](~/_posts/2025-01-18-Future-Plan.md).
 All changes can be seen by looking at the history of the markdown file, [here](https://github.com/gabriel-paulos/gabriel-paulos.github.io/blob/theme-edits/_posts/2025-01-18-Hallucinations.md).
 
 

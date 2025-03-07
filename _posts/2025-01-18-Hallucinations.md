@@ -79,7 +79,6 @@ Broadly hallucinations come in two forms: limitations in understanding input ima
 
 (IBD image here) 
 
-
 ## <a name="detection">Hallucination Detection</a>
 
 There are various metrics used to evaulate how hallucination prone models are. These will be discussed in the appendix. 
@@ -105,7 +104,7 @@ Both of these types of evaluations are inherently limited in their ability to pr
     <figcaption>Fig.4: The following comparison evaluates the  (source: <a href="https://arxiv.org/pdf/2405.05256"> (Kaul et al. 2024)) </a></figcaption>
 </figure>
 
-Future evaluations should look more in depth into creating subject-specific benchmarks in a similar vain to LongHalQA. However, there remains much room for exploration specifically in the creation of hallucination tasks that evaluate the reasoning ability of these models. 
+Future evaluations should look more in depth into creating subject-specific benchmarks in a similar vain to LongHalQA. However, there remains much room for exploration specifically in the creation of hallucination tasks that evaluate the reasoning ability of these models or in having a dialogue-level hallucination evaluation benchmark (https://aclanthology.org/2024.findings-emnlp.529.pdf). 
 
 ## <a name="Mitigation">Current Hallucination Mitigation methods for VLMs?</a>
 

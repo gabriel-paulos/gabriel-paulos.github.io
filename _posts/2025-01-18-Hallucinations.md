@@ -48,10 +48,11 @@ The struggles with hallucinations for LLMs are well documented in text generatio
 
 <figure>
     <img src="/assets/images/HalluEx.png" alt="Language Prior Hallucination" class="img-posts">
-    <figcaption>Fig.2: Example of a hallucination caused by the language priors of the model (source: <a href="https://arxiv.org/pdf/2502.12359"> (Wu et al. 2025) </a></figcaption>
+    <figcaption>Fig.2: Example of a hallucination caused by the language priors of the model (source: <a href="https://arxiv.org/pdf/2502.12359"> (Wu et al. 2025)) </a></figcaption>
+	</br></br>
 </figure>
 
-</br>
+
 
 VLM hallucinations differ from normal LLM hallucinations as the latent space for VLMs is more coarse than the latent space for LLMs. This has to do with a carousel of reasons: from the architecture of VLMs, the tendency of VLMs to bias their outputs more on the text modality, the loss function used to align the CLIP and LLM modules, misalignment with abstract human concepts and CLIP’s latent space. In fact, there is reason to believe that the embedding space used by VLMs does not include a rich representation of visual tokens [[2](https://arxiv.org/pdf/2407.06581)].
 

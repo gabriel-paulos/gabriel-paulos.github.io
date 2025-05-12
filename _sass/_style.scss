@@ -44,6 +44,44 @@ h2 {
 }
 
 /*
+* Code
+*/
+
+/* Basic Styling for Code */
+pre, code {
+    font-family: "Courier New", Courier, monospace; /* Use a monospace font */
+    background-color: #1e1e1e; /* Dark background for code blocks */
+    color: #f5f5f5; /* Light font color */
+}
+
+/* Style for Fenced Code Blocks (with syntax highlighting) */
+pre {
+    padding: 16px; /* Space inside the code block */
+    border-radius: 6px; /* Rounded corners */
+    margin: 20px 0; /* Space above and below */
+    overflow-x: auto; /* Horizontal scrolling if content is too wide */
+    background-color: #2e2e2e; /* Slightly darker background */
+}
+
+/* Style for Inline Code (inside paragraphs) */
+code {
+    font-size: 1em; /* Adjust size if necessary */
+    padding: 2px 4px; /* Padding around the inline code */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #e0e0e0; /* Lighter background */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Highlight Code Syntax (optional: if you're using Prism.js or Highlight.js) */
+pre code {
+    background-color: transparent; /* Make it transparent, as Prism.js or Highlight.js will handle background */
+    padding: 0; /* Remove extra padding */
+    font-size: 0.9em; /* Adjust size slightly */
+}
+
+
+
+/*
  * Navbar
  */
 

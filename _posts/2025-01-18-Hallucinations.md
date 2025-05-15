@@ -120,6 +120,8 @@ There exist numerous proposed solutions to different types of VLM hallucinations
 
 Below I will include some of these solutions (this will be fleshed out):
 
+### Post Training RLHF and DPO
+
 [V-DPO](https://arxiv.org/abs/2411.02712)
 
 [IBD](https://arxiv.org/pdf/2402.18476)

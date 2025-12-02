@@ -1,0 +1,114 @@
+---
+layout: post
+title: "A Note on Measuring Visual Complexity"
+subtitle: "Boy is that giving me a headache?"
+date: 2025-12-01
+tags: [child, VLMs, complexity]
+---
+
+mages and videos are a form of high density information exchange. We have various ways of thinking about information in this setting: from measuring its byte size to measuring its Shannon entropy (in terms of pixel intensity), or even if you wanted the number of edges in an image or frame. I say this with complexity theory whispering to my errors that I forgot to include Kolmogrov Complexity into this picture. Theoretically, it is true that it would be a good framework to use, but its entirely uncomputable in a practical sense. Although we can treat compression as an inverse to the Kolmogrov Complexity of a video/image.
+
+This has caused immense problems for us when developing AI models that can “see”. For one it makes it difficult to come up with good benchmarks to test these models on, as all the work is done through qualitative measures and intuition. This makes it extremely difficult to measure overall progress of these systems other than saying, “Wow, it has learned how to accomplish high benchmark test scores for the top 5 most popular datasets in the computer vision community. Wonder what tasks it is not good at?” 
+
+A step in the right direction was made recently in,(https://arxiv.org/pdf/2505.13429)[Understanding Complexity in VideoQA via Visual Program Generation] (UCVVPG). However, it only proposed a solution to developing a quantitative way of determining a question’s complexity in a question video pair. 
+
+Below I will present some papers that may beneficial to speak about in terms of the development of a data-driven and quantitative way of measuring a video or images complexity that approximates its Kolmogrov Complexity, or at least brings to light some of the dimensions that determine what makes a visual medium complex to understand from the point of view of a vision model.
+
+Index:
+
+- Kolmogrov Complexity Framework
+
+- The binding problem of VLMs
+- Distraction is All you need
+- Aligning Distraction Hypothesis with the binding problem
+- Future Opportunities
+
+
+
+(NOTE: KEEP IT CONSISTENT THAT YOU ARE TRYING TO DETERMINE THE LENGTH OF PROGRAMS
+
+
+Theories on Complexity and Compression:
+
+
+Minimum Message Length Principle:
+
+Minimum Message Length (MML) principle is the formalization of Occam’s Razor in Bayesian information-theoretic terms: given, two models of equal in measure of fit-accuracy to data, the one with most compressed explanation (or description) is most likely to be correct.
+
+ To treat this mathematically we will start with the following definition. Given an optimal code, the message length of an event E, length(E), where E is has probability P(E), is given by L(E) = - log_{2}(P(E)) . [Shannon’s A Mathematical Theory of Communication]. Implicit in Occam’s Razor is that the simplest model is the one that maximizes the posterior probability, P(H | E). This is because if we were to define the model as the hypothesis (H) given some evidence (or event) (E), then we would like to the length of the output to be minimized. This is given by L(H ⌃ E) = - log_{2}(P(H⌃ E). Using Bayes’ Theorem we can make P(H⌃ E) = P(E | H)P(H), as we are looking for the predictive ability of our model. Thus, this would give a L(H⌃ E) = L(P(E | H)P(H)) = - log_{2}(P(E | H)) - log_{2}(P(H)). We can see Occam’s Razor clearly: in the first value we are looking at the length needed to describe the event given our currrent model, and the second value is the length needed to describe the model itself (like its parameters). [//] Note here that we there exists model selection criterions like Bayesian Information Criterion (BIC) that explicitly penalize a model’s based on the number of parameters it contains. The BIC is used to select the best model by trying to find the model that minimizes the BIC.
+
+
+Given that we want to min length(H⌃ E), this means we essentially want min_{H contains H} -log_{2}(P(H⌃ E) = max_{H contains H} (P(E | H)P(E)), which is the posterior probability. 
+
+
+This principle is commonly known as minimum description length (MDL) in the context of ML. 
+
+
+Kolmogrov Complexity:
+
+Kolmogrov Complexity (KC) is the most optimal choice to determine the MDL for a given program. Formally, it is the length of the shortest description that defines the complexity of a program (or object). In the case of computers, these descriptions are defines as binary computer programs. KC is used to describe the intrinsic “randomness” or complexity of a given string, and is given by the following: K_{U}(s) = min_{p:U(p) = s} L(p) where K_{U} is the KC of a string s with respect to a universal computer U (a Turing-complete computer). 
+
+Given the fact that the KC is incomputable (as it is reducible to the Halting problem), and the undecidability of determining if a string is incompressible, it is not very useful by itself. 
+
+KC inspired the paper introduced above (UCVVPG), specifically the chain rule for KC. We can express the complexity of the a (video, question) pair using the chain rule as: 
+
+K(x,y) = K(x) + K(y | x) + O(log(K(x,y)))
+
+Where x is the video and y is the question. In cases where there is minimal shared information between the video and the question, the complexity of the pair can be approximated as the sum of their individual complexities, up to this logarithmic term:
+
+K(x,y) = K(x) + K(y) + O(log(K(x,y)))
+
+
+Both of the equations demonstrate an important fact that is not heavily investigated in evaluations: the source of complexity of a task is dependent to the complexity of the question and the complexity of the input medium that is used by the AI system to answer the question. Despite seeming obvious, this idea only really becomes visible in the case where the input medium is as densely packed with information as a video or sometimes as an image. In fact, it underscores the need for evaluations that better consider the reasons for a model’s answer to a specific question-input pair. 
+
+
+MAYBE SPEAK ABOUT CODEPLEXITY MORE
+
+
+THE VISUAL BINDING PROBLEM (https://arxiv.org/abs/2411.00238)
+
+The binding problem is a fundamental problem, in cognitive science and neuroscience, refers to question of how the brain is able to ‘bind’, associate one feature of an object with the object’s other features, without interference for different objects. If you try this yourself, you might not notice that what you do is serially process the scene or the problem, directing attention to individual objects sequentially. However, our ability to do this quickly degrades as we lose the ability to deploy serial processing. This happens in settings where either quick decisions are necessary or because our attention is being split by too many objects at once. If you shake your head around vigorosly you would notice this as the colors of seperate objects start bleeding into one another. These are called illusory conjunctions.
+
+The paper on the other explores the hypothesis that Vision Language Models (VLMs) exhibit an analogous phenomena. 
+
+A motivation for this question in studying this is that in scenes with high density of objects confusing the model or two objects that are intersecting from a 2D POV but not a 3D POV. 
+
+A motivation for this would be the hard time these models have in understanding scenes with a density of similarly looking objects close together (in scenes with non-overlapping or in scenes with overlapping objects). In scenes with non-overlapping objects these models struggle with conjunctive search: where half of the objects in a scene share one particular feature with a target object and the other half shares a different feature with the target object. An example of this would be to imagine a CLEVR (the dataset) scene where the target object is a red sphere. The other objects in the scene are created as sharing one feature with the target object. As seen in the image below we have two groups of objects: one group that shares the feature of being red, and the other group that shares the feature of being spherical. 
+
+In the case where there are overlapping objects, these systems have a hard time segmenting objects. In fact, this was a problem I came across quite frequently when working with VLMs in the [gFootball](https://github.com/google-research/football?tab=readme-ov-file) environment. Here two players (even if they were opponents) would be classified as one player by both SAM (yes, the segmentation model) and MoLMO. So if the target object is found in a frame where there are two players on opposing teams who share a high overlapping area, there is a high chance that they are seen as the same player. This shares similarities to the conjunctive search example above as the VLM essentially must perform conjunctive search in a subsection of the scene to identify the target object.  
+
+[IMAGE OF THE GFOOTBALL WITH OVERLAPPING PLAYERS HERE, USE SAM TO DEMONSTRATE]
+
+
+In both cases as the number of objects in a scene (or in the overlapping case, the number of overlapping objects) increases, the worse the performance of the VLMs on identifying the target object(s).  
+
+You might be asking how does this relate to image complexity? Well, the density of objects in a scene especially those that share features with a target object seems to be inversely proportional to a model’s success in identifying the target object. The question to ask is whether this is because of the lack of generalization from these models to these specific tasks or if its a forgetting problem (an attention problem)?
+
+DISTRACTION IS ALL YOU NEED (https://arxiv.org/pdf/2502.10794)
+
+This paper explores a new jailbreaking method that evades red-teaming attempts on a VLM through the use of adding complexity to an image. This seems strange as one would suspect that the projection layer of a VLM or a cross-attention layer would map the illicit prompt in a direction that would trigger a refusal response from the VLM, especially given the alignment strategies applied to these models before deployment.  Despite these efforts, out-of-distrbution (OOD) inputs can regularly be used to jailbreak these models. This becomes more complicated by the fact that the image modality seems to suffer from the higher information density than that found in text. The difficulty of course is that using those same models to generate OOD image inputs is also extremely difficult, as is the case of trying to get a pertrubation injection that regularly elicits jailbreaking behavior from a model. In both cases, the image content lives within a neighbourhood of the embedding space of what is deemed acceptable. In effect the complexity of images makes it difficult for models to retain a low dimensional embedding space where easy divisions between benign and prohibited images live. This is seen in [Gong et al.](https://arxiv.org/pdf/2311.05608) below. As a short TLDR: Figstep is a typographic attack where the query is made into a typographic image and the model is told to essentially fill in the steps to perform a query. This is an OOD attack as there are no safety alignment benchmarks that deal with these sort of attacks.
+
+￼
+
+
+In the image above there exists such overlap between the benign and prohibited prompt in FigStep (within the embedding space) that its impossible to seperate them. It becomes inseperable, just like when data is not linearly seperable and one tries to use a linear regression model. Of course one solution would be to just use an OCR tool that reads the text and makes it live in the text embedding space. However, this can be easily countered by simply rendering text into sub-images with meaningless subwords disperesed throughout an image. This evades the OCR tools ability to detect harmful prompts. This is built upon is the Distraction is all you need paper by adding images with dissimilar embeddings to the image. In essence the pattern seems to be a increase of complexity in these images. The Distraction is all you need’s main hypothesis is that adding distractions to an image increases the processing burden of VLMs, weakening the model’s defenses and making it prone to jailbreaking attacks and inducing unintended outputs. 
+
+I will briefly discuss the jailbreaking method of the Distraction is all you need paper here. The method is simple, 
+
+Distraction is all you need hypothesis
+
+
+
+Relation to binding problem and how complexity seems to be indirectly factored into this
+
+Does this mean that complexity is unsolvable or is there an upper limit before the noise of complexity drowns away jailbreaking methods?
+
+Would creating datasets with images of higher complexity remove the effects of jailbreaking methods or would it just completely nerf models?
+
+
+
+However, they empirically show that in fact it works, and it is from my knowledge the current SOTA jailbreaking method for VLMs. What’s fascinating about these two papers is that they both reached similar empricial conclusions from their tests: VLMs suffer gravely from their inability to handle complexity within their input. This is an important problem that is not considered by VLM evaluations and benchmarks. 
+
+GO on about distraction hypothjesis and how its related to the binding problem 
+
+future steps is exploring a new metric that correlates iwth the distraction hypothesis metric or to use the distraction hypothesis method with the codeplexity measure to evaluate the complexity of a video, question pair. One other thing to consider is that hte distration hypothesis would need to be extended to video regime as it in in the image regime. 

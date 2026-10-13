@@ -225,13 +225,17 @@ Addressing hallucination at the source involves eliminating noisy web captions f
 
 Introduced by Rohrbach et al. [[23]](#ref-chair), CHAIR evaluates object hallucination in free-form generated text by matching generated object words against ground-truth MSCOCO segmentations:
 
-- **Instance-Level ($CHAIR_i$)**: The fraction of hallucinated object instances out of all mentioned object instances:
-  
-  $$\text{CHAIR}_i = \frac{|\{\text{hallucinated objects}\}|}{|\{\text{all mentioned objects}\}|}$$
+- **Instance-Level (`CHAIR_i`)**: The fraction of hallucinated object instances out of all mentioned object instances:
 
-- **Sentence-Level ($CHAIR_s$)**: The fraction of generated sentences containing at least one hallucinated object:
-  
-  $$\text{CHAIR}_s = \frac{|\{\text{sentences with hallucinated objects}\}|}{|\{\text{total sentences}\}|}$$
+```latex
+\text{CHAIR}_i = \frac{|\{\text{hallucinated objects}\}|}{|\{\text{all mentioned objects}\}|}
+```
+
+- **Sentence-Level (`CHAIR_s`)**: The fraction of generated sentences containing at least one hallucinated object:
+
+```latex
+\text{CHAIR}_s = \frac{|\{\text{sentences with hallucinated objects}\}|}{|\{\text{total sentences}\}|}
+```
 
 #### POPE Sampling Strategies
 
